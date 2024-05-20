@@ -6,51 +6,82 @@
 
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/form.css">
+    <!---
+        <link rel="stylesheet" href="./styles/form.css">
+    -->
 
     <script type="module" src="./js/index.js"></script>
 
-    <title>Parcial</title>
+    <title>Primer Parcial</title>
 </head>
 
 <body>
     <header class="flex">
-        <div class="navegacion flex">
-            <nav>
-                <ul class="flex">
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Anuncio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="container-sections">
-        <section>
-            <form action="">
-                <div>
-
-                </div>
-            </form>
-        </section>
-
-    </div>
-
-    <footer class="flex">
+      <div class="navegacion flex">
+        <img src="./assets/img/" alt="Logo Principal" />
+  
         <nav>
-            <ul class="flex">
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Anuncio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacto</a></li>
-                
-            </ul>
+          <ul class="flex">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Anuncio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
         </nav>
-
-        <p>Todo los derechos reservados <date>2024</date> &copy;</p>
-    </footer>
-    
-</body>
+      </div>
+    </header>
+  
+    <main>
+      <h1>Administración</h1>
+      <img class="portada" src="./assets/img/" alt="Logo" />
+      <section> 
+        <fieldset>
+          <legend>Información del Anuncio</legend>
+  
+          <form> 
+            <input type="hidden" name="id"><br><br>
+            Titulo: <input type="text" name="titulo" placeholder="Titulo" required /> 
+            Transacción:
+            <div class="transaccion">
+              <input type="radio" name="transaccion" value="venta" checked />Venta
+              <input type="radio" name="transaccion" value="alquiler" />Alquiler
+            </div>
+            Descripcion: <input type="text" name="descripcion" placeholder="Descripcion" />
+            Precio: <input type="text" name="precio" placeholder="Precio" />
+            <div class="detalle">
+              <input type="text" name="puerta" placeholder="Puertas" />
+              <input type="text" name="kms" placeholder="KMs" />
+              <input type="text" name="pontencia" placeholder="Pontencia" />         
+            </div>
+  
+            <div class="btnFrm">
+              <input id="btnGuardar" type="submit" value="Guardar" />
+              <input id="btnEliminar" type="button" value="Eliminar" class="oculto" />
+              <input id="btnCancelar" type="button" value="Cancelar" class="oculto" />
+            </div>
+  
+          </form>
+  
+        </fieldset>
+  
+      </section>
+  
+      <div id="spinner-container"></div>
+      <div id="divTabla"></div>
+  
+    </main>
+  
+    <footer class="flex">
+      <nav>
+        <ul class="flex">
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Anuncio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Coontacto</a></li>
+        </ul>
+      </nav>
+      <p>Todo los derechos reservados <date>2024</date> &copy;</p>
+    </footer>   
+  
+  </body>
 </html>

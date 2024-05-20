@@ -1,108 +1,175 @@
-@font-face {
-	font-family: poppins;
-	src: url(../assets/fonts/Poppins-Black.ttf);
-}
-
-header {
-  padding: 20px 20px;
-  background-color: grey;
-  background-image: url(../assets/img/);
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  flex-direction: column;
-  justify-content: space-between;
-
-  height: 100vh;
-
-  font-family: poppins, sans-serif;
-}
-
-.navegacion {
-  padding-top: 10px;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-header nav ul,
-footer nav ul {
-  text-decoration: none;
-  list-style-type: none;
-
-  flex-direction: row;
-  justify-content: right;
-
-  gap: 1rem;
-}
-
-header nav ul li a,
-footer nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-header h1 {
-  color: white;
-  width: 700px;
-  font-size: 50px;
-}
-
-footer {
-  width: 100%;
-  padding: 2rem 1rem;
-
-  justify-content: space-between;
+:root {
+    --primary-color: gainsboro;
+    --secondary-color: white;
+  }
   
-  color: white;
-  background: black;
-  font-family: poppins, sans-serif;
-}
-
-
-
-
-.container-sections {
-  width: 100%;
-
-  gap: 3rem;
-}
-
-.container-sections section {
-  min-height: 100vh;
-}
-
-.container-table {
-  width: 100%;
-  justify-content: center;
-}
-
-.container-table table {
-  width: 75%;
-  justify-content: center;
-
-  flex-direction: column;
-}
-
-.container-table table thead {
-  width: 100%;
-}
-
-.container-table tbody tr {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container-table table tr {
-  justify-content: space-between;
-
-  padding: 0.5rem;
-}
-
-.table-stripped thead tr:nth-child(odd) {
-  background-color: #f2f2f2;
-}
-
-.table-stripped tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
+  @font-face {
+    font-family: poppins;
+    src: url(../assets/font/Poppins/Poppins-Bold.ttf);
+  }
+  
+  header {
+    padding: 20px 20px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: gray;
+  
+    flex-direction: column;
+    justify-content: space-between;
+  
+    height: 70vh;
+  
+    font-family: poppins, sans-serif;
+  }
+  
+  .navegacion {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  header nav ul,
+  footer nav ul {
+    text-decoration: none;
+    list-style-type: none;
+  
+    flex-direction: row;
+    justify-content: right;
+  
+    gap: 1rem;
+  }
+  
+  header nav ul li a,
+  footer nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  footer {
+    width: 100%;
+    padding: 2rem 1rem;
+  
+    justify-content: space-between;
+    
+    color: var(--secondary-color);
+    background: black;
+    font-family: poppins, sans-serif;
+  }
+  
+  h1 {
+    background-color: white;
+    text-align: center;
+    font-family: poppins;
+  }
+  
+  #btnGuardar {
+    padding: 10px 10px;
+  
+  }
+  
+  #btnEliminar {
+    padding: 10px 10px;
+  }
+  
+  #btnCancelar {
+    padding: 10px 10px;
+  }
+  
+  .oculto {
+    display: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  fieldset {
+    border-radius: 10px;
+    border: solid 2px var(--primary-color);
+  
+  }
+  
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    border: none;
+    margin: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    
+  }
+  
+  
+  .transaccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .detalle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #divTabla {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin-top: 10%;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+  
+  thead {
+    background-color: brown;
+    color: white;
+  }
+  
+  tr:nth-of-type(even) {
+    background-color: gray;
+  }
+  
+  #spinner-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portada {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @media(max-width: 760px) {
+    .detalle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
