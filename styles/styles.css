@@ -1,14 +1,14 @@
 :root {
     --primary-color: gainsboro;
     --secondary-color: white;
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: poppins;
-    src: url(../assets/font/Poppins/Poppins-Bold.ttf);
-  }
+    src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
   
-  header {
+header {
     padding: 20px 20px;
     background-image: url();
     background-repeat: no-repeat;
@@ -21,17 +21,17 @@
     height: 70vh;
   
     font-family: poppins, sans-serif;
-  }
+}
   
-  .navegacion {
+.navegacion {
     padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
+}
   
-  header nav ul,
-  footer nav ul {
+header nav ul,
+footer nav ul {
     text-decoration: none;
     list-style-type: none;
   
@@ -39,16 +39,16 @@
     justify-content: right;
   
     gap: 1rem;
-  }
+}
   
-  header nav ul li a,
-  footer nav ul li a {
+header nav ul li a,
+footer nav ul li a {
     color: var(--secondary-color);
     text-decoration: none;
     font-size: 20px;
   }
   
-  footer {
+footer {
     width: 100%;
     padding: 2rem 1rem;
   
@@ -57,119 +57,128 @@
     color: var(--secondary-color);
     background: black;
     font-family: poppins, sans-serif;
-  }
+}
   
-  h1 {
+h1 {
     background-color: white;
     text-align: center;
     font-family: poppins;
-  }
+}
+
+legend {
+    font-family: poppins;
+}
+
+main input {
+    font-family: poppins;
+    font-size: 18px;
+}
   
-  #btnGuardar {
+#btnGuardar {
     padding: 10px 10px;
   
-  }
+}
   
-  #btnEliminar {
+#btnEliminar {
     padding: 10px 10px;
-  }
+}
   
-  #btnCancelar {
+#btnCancelar {
     padding: 10px 10px;
-  }
+}
   
-  .oculto {
+.oculto {
     display: none;
-  }
+}
   
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
   
-  fieldset {
+fieldset {
     border-radius: 10px;
     border: solid 2px var(--primary-color);
   
-  }
+}
   
-  section {
+section {
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
+}
   
-  form {
+form {
     display: flex;
     flex-direction: column;
-  }
+    font-family: poppins;
+    font-size: 16px;
+}
   
-  input {
+input {
     border: none;
     margin: 10px;
     background-color: var(--primary-color);
     border-radius: 10px;
     
-  }
-  
-  
-  .transaccion {
+}
+
+.transaccion {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
+}
   
-  .detalle {
+.detalle {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
+}
   
-  #divTabla {
+#divTabla {
     display: flex;
     justify-content: center;
     padding: 30px;
-  }
-  
-  table {
+}
+table {
     border-collapse: collapse;
     margin-top: 10%;
-  }
+}
   
-  table,
-  th,
-  td {
+table,
+th,
+td {
     border: 1px solid black;
-  }
+}
   
-  thead {
+thead {
     background-color: brown;
     color: white;
-  }
-  
-  tr:nth-of-type(even) {
+}
+
+tr:nth-of-type(even) {
     background-color: gray;
-  }
+}
   
-  #spinner-container {
+#spinner-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  .portada {
+.portada {
     height: 100%;
     width: 100%;
-  }
+}
   
-  @media(max-width: 760px) {
+@media(max-width: 760px) {
     .detalle {
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-  }
+}
