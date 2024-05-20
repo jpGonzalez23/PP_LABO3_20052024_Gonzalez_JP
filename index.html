@@ -37,7 +37,7 @@
         <fieldset>
           <legend>Información del Anuncio</legend>
   
-          <form> 
+          <form id="form-item"> 
             <!---
               <input type="hidden" name="id"><br><br>
             Título: <input type="text" name="titulo" placeholder="Título" required /> 
@@ -64,9 +64,9 @@
             <input type="hidden" name="id"><br>
 
             <div class="descripcion">
-              Nombre: <input type="text" name="nombre" placeholder=" Ingrese el Nombre" required />
-              Tamaño: <input type="text" name="tamanio" placeholder=" Ingrese el Tamaño" required />
-              Masa: <input type="text" name="masa" placeholder=" Ingrese la Masa" required />
+              Nombre: <input type="text" name="nombre" id="nombre" placeholder=" Ingrese el Nombre" required />
+              Tamaño: <input type="text" name="tamanio" id="tamanio" placeholder=" Ingrese el Tamaño" required />
+              Masa: <input type="text" name="masa" id="masa" placeholder=" Ingrese la Masa" required />
             </div>
             
             <div class="tipoPlaneta">
@@ -82,7 +82,7 @@
             </div>
             
             
-            Distancia al Sol: <input type="text" name="distanciaAlSol" placeholder=" Ingrese la Distancia" required />
+            Distancia al Sol: <input type="text" name="distanciaAlSol" id="distanciaAlSol" placeholder=" Ingrese la Distancia" required />
             
             <div class="detalle">
               <label for="presentaVida">Presenta Vida</label>
@@ -91,7 +91,7 @@
               <input type="checkbox" name="presentaAnillo" id="presentaAnillo" />
             </div>
             
-            Composición Atmosférica: <input type="text" name="composicionAtmosferica" placeholder=" Ingrese su composicion">
+            Composición Atmosférica: <input type="text" name="composicionAtmosferica" id="composicionAtmosferica" placeholder=" Ingrese su composicion">
 
             <div class="btnFrm">
               <input id="btnGuardar" type="submit" value="Guardar" />

@@ -1,4 +1,4 @@
-import PlanetaBase from "./planetaBase";
+import PlanetaBase from "./planetaBase.js";
 
 export default class Planeta extends PlanetaBase {
     constructor(id, nombre, tamanio, masa, tipo, distanciaSol, poseeAnillo, poseeVida, compocionAtmosferica) {
