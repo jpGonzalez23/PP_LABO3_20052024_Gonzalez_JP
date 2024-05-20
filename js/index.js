@@ -1,4 +1,5 @@
 import Planeta from './planeta.js';
+import { leer } from './local_storage.js';
 
 const formulario = document.getElementById("form-item");
 
@@ -6,6 +7,10 @@ document.addEventListener("DOMContentLoaded", onInit);
 
 function onInit() {
 
+}
+
+function loadItems() {
+    
 }
 
 function handlerClick(e) {
@@ -24,4 +29,7 @@ function handlerClick(e) {
             formulario.querySelector('#composicionAtmosferica')
         );
     });
+}
+
+function rellenarTabla() {
 }
