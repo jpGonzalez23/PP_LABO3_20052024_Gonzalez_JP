@@ -10,7 +10,7 @@
   
 header {
     padding: 20px 20px;
-    background-image: url();
+    background-image: url(../assets/img/background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-color: gray;
@@ -22,14 +22,19 @@ header {
   
     font-family: poppins, sans-serif;
 }
-  
+
 .navegacion {
     padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
-  
+
+.navegacion img {
+    width: 90px;
+}
+
 header nav ul,
 footer nav ul {
     text-decoration: none;
@@ -114,6 +119,7 @@ section {
 form {
     display: flex;
     flex-direction: column;
+    width: 50rem;
     font-family: poppins;
     font-size: 16px;
 }
@@ -123,7 +129,6 @@ input {
     margin: 10px;
     background-color: var(--primary-color);
     border-radius: 10px;
-    
 }
 
 .transaccion {
@@ -135,7 +140,35 @@ input {
 .detalle {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.detalle input, label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+}
+
+.tipoPlaneta {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+select {
+    border: none;
+    margin: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    width: 20rem;
+    height: 20px;
+    font-family: poppins;
+    font-size: 16px;
 }
   
 #divTabla {

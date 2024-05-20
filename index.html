@@ -18,7 +18,7 @@
 <body>
     <header class="flex">
       <div class="navegacion flex">
-        <img src="./assets/img/" alt="Logo Principal" />
+        <img src="./assets/img/logo.svg" alt="Logo Principal" />
   
         <nav>
           <ul class="flex">
@@ -32,16 +32,14 @@
     </header>
   
     <main>
-      <h1>Administración</h1>
-      
-      <img class="portada" src="./assets/img/" alt="Logo" />
-
+      <h1>Administración de Planetas</h1>
       <section> 
         <fieldset>
           <legend>Información del Anuncio</legend>
   
           <form> 
-            <input type="hidden" name="id"><br><br>
+            <!---
+              <input type="hidden" name="id"><br><br>
             Título: <input type="text" name="titulo" placeholder="Título" required /> 
             Transacción:
             <div class="transaccion">
@@ -61,7 +59,46 @@
               <input id="btnEliminar" type="button" value="Eliminar" class="oculto" />
               <input id="btnCancelar" type="button" value="Cancelar" class="oculto" />
             </div>
-  
+            -->
+
+            <input type="hidden" name="id"><br>
+
+            <div class="descripcion">
+              Nombre: <input type="text" name="nombre" placeholder=" Ingrese el Nombre" required />
+              Tamaño: <input type="text" name="tamanio" placeholder=" Ingrese el Tamaño" required />
+              Masa: <input type="text" name="masa" placeholder=" Ingrese la Masa" required />
+            </div>
+            
+            <div class="tipoPlaneta">
+              <Label>Tipo</Label>
+              <select name="tipo" id="tipo">
+                <optgroup>
+                  <option value="1">rocoso</option>
+                  <option value="2">gaseoso</option>
+                  <option value="3">helado</option>
+                  <option value="4">enano</option>
+                </optgroup>
+              </select>
+            </div>
+            
+            
+            Distancia al Sol: <input type="text" name="distanciaAlSol" placeholder=" Ingrese la Distancia" required />
+            
+            <div class="detalle">
+              <label for="presentaVida">Presenta Vida</label>
+              <input type="checkbox" name="presentaVida" id="presentaVida"/>
+              <label for="presentaAnillo">Presenta Anillo</label>
+              <input type="checkbox" name="presentaAnillo" id="presentaAnillo" />
+            </div>
+            
+            Composición Atmosférica: <input type="text" name="composicionAtmosferica" placeholder=" Ingrese su composicion">
+
+            <div class="btnFrm">
+              <input id="btnGuardar" type="submit" value="Guardar" />
+              <input id="btnEliminar" type="button" value="Eliminar" class="oculto" />
+              <input id="btnCancelar" type="button" value="Cancelar" class="oculto" />
+            </div>
+
           </form>
   
         </fieldset>
