@@ -28,6 +28,8 @@ function handlerClick(e) {
             formulario.querySelector('#poseeVida'),
             formulario.querySelector('#composicionAtmosferica')
         );
+
+        
     });
 }
 
