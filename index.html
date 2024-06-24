@@ -6,9 +6,8 @@
 
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <!---
-        <link rel="stylesheet" href="./styles/form.css">
-    -->
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.svg">
 
     <script type="module" src="./js/index.js"></script>
 
@@ -87,7 +86,12 @@
             />
             <div class="detalle">
               <label for="presentaVida">Presenta Vida</label>
-              <input type="checkbox" name="presentaVida" id="presentaVida" />
+              <input 
+                type="checkbox"
+                name="presentaVida" 
+                id="presentaVida" 
+              />
+              
               <label for="presentaAnillo">Presenta Anillo</label>
               <input
                 type="checkbox"
@@ -102,27 +106,54 @@
               id="composicionAtmosferica"
               placeholder=" Ingrese su composicion"
             />
+
             <div class="btnFrm">
               <input id="btnGuardar" type="submit" value="Guardar" />
               <input
                 id="btnEliminar"
                 type="button"
                 value="Eliminar"
-                class="oculto"
+                class="btn btn-Eliminar oculto"
               />
               <input
                 id="btnCancelar"
                 type="button"
                 value="Cancelar"
+                class="btn btn-cancelar oculto"
+              />
+              <input
+                id="btnModificar"
+                type="button"
+                value="Modificar"
                 class="oculto"
               />
             </div>
           </form>
         </fieldset>
+
+        <div class="container-tabla flex">
+          <table id="table-items" class="table-items flex">
+            <thead>
+              <tr class="flex">
+                <tr hidden>id</tr>
+                <tr>Nombre</tr>
+                <tr>Tamaño</tr>
+                <tr>Masa</tr>
+                <tr>Tipo</tr>
+                <tr>Distancia al Sol</tr>
+                <tr>Posee Anillo</tr>
+                <tr>Composición Atmosférica</tr>
+                <tr>Acciones</tr>
+                </tr>
+            </thead>
+            <tbody class="tbodyx"></tbody>
+          </table>
+        </div>
       </section>
 
-      <div id="spinner-container"></div>
-      <div id="divTabla"></div>
+      <div id="spinner-container" class="spinner">
+        <img src="./assets/img/logo.svg" alt="spinner" class="spinner-img">
+      </div>
     </main>
 
     <footer class="flex">
